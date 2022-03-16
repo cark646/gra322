@@ -36,6 +36,8 @@ header {
     width: 100%;
 }
 
+
+
 .menu {
     background-color: var(--orange);
     color: white;
@@ -44,7 +46,7 @@ header {
     font-size: 30px;
 }
 
-.paninis {
+.titles {
     background-color: var(--green-dark);
     color: white;
     font-family: 'Playball', cursive;
@@ -67,22 +69,23 @@ p {
     font-size: 17px;
 }
 
+.food {
+    margin-bottom: 2rem;
+}
+
 .three-column > * {
     margin-top: 1.5rem;
 }
 
-.drinks {
-    background-color: var(--green-dark);
-    color: white;
-    font-family: 'Playball', cursive;
-    font-weight: 400;
-    font-size: 28px;
-    margin-top: 2rem;
-}
 
 .tables {
     margin-top: 1.5rem;
+    margin-bottom: 2rem;
     padding-right: 0rem;
+}
+
+.address {
+    margin-top: 1.5rem;
 }
 
 .flex {
@@ -90,17 +93,79 @@ p {
     justify-content: space-between
 }
 
+.about {
+    max-width: 400px;
+}
+
+.socials {
+    color: white;
+    display:flex;
+    font-size: 150%;
+    padding: 1rem, 0;
+    margin-left: 20px;
+    margin-right: 250px;
+    margin-bottom: 1rem;
+    max-width: 100px;
+    justify-content: space-between;
+}
+
+.footer {
+    background-color: var(--green-dark);
+    padding: 2rem 0;
+    
+}
+
 
 
 /* Tablet Breakpoint */
-@media screen and (min-width: 600px) {
-
-
+@media screen and (min-width: 768px) {
+    header {
+        background-size: 500px, 780px;
+        background-position: 50% -35%, 7% -10%;
+        height: 500px;
+    }
+    .three-column {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .three-column > * {
+        max-width: 250px;
+    }
+    .map {
+        height: 100%;
+    }
+    .two-column {
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-columns: 1fr 1fr;
+    }
+   
 }
 
 
 /* Desktop Breakpoint */
-@media screen and (min-width: 800px) {
-    
+@media screen and (min-width: 1280px) {
+    header {
+        background-size: 700px, 1600px;
+        background-position: 80% 50%, 100% 65%;
+        height: 500px;
+    }
+    .three-column {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .three-column > * {
+        max-width: 250px;
+    }
+    .map {
+        height: 100%;
+    }
+    .two-column {
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-columns: 1fr 1fr;
+    }
 
 }
