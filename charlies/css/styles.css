@@ -1,0 +1,106 @@
+html {
+    --green: #5C6E00;
+    --green-dark: #445100;
+    --orange: #CC7708;
+    --text: #D6D6D6;
+    --subtitle: #FF9000;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: [full-start] minmax(1rem, 1fr) [main-start] minmax(0, 1280px) [main-end] minmax(1rem, 1fr) [full-end];
+}
+
+.grid > * {
+    grid-column: main;
+}
+
+body {
+    background: var(--green);
+    font-family: 'Fira Sans', arial, sans-serif;
+    font-weight: 300;
+}
+
+header {
+    background-image: url(../img/logo.png), 
+    url(../img/cup.png);
+    background-size: 340px, 700px;
+    background-position: center 10%, 7% 0%;
+    background-repeat: no-repeat,
+    no-repeat;
+    display: flex;
+    color: white;
+    height: 433px;
+    justify-content:space-between;
+    padding: 28px 33px 28px 33px;
+    width: 100%;
+}
+
+.menu {
+    background-color: var(--orange);
+    color: white;
+    font-family: 'Playball', cursive;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.paninis {
+    background-color: var(--green-dark);
+    color: white;
+    font-family: 'Playball', cursive;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.subtitle {
+    color: var(--subtitle);
+    font-size: 20px;
+}
+
+p {
+    color: var(--text);
+    font-size: 15px;
+}
+
+.price {
+    color: white;
+    font-size: 17px;
+}
+
+.three-column > * {
+    margin-top: 1.5rem;
+}
+
+.drinks {
+    background-color: var(--green-dark);
+    color: white;
+    font-family: 'Playball', cursive;
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 2rem;
+}
+
+.tables {
+    margin-top: 1.5rem;
+    padding-right: 0rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between
+}
+
+
+
+/* Tablet Breakpoint */
+@media screen and (min-width: 600px) {
+
+
+}
+
+
+/* Desktop Breakpoint */
+@media screen and (min-width: 800px) {
+    
+
+}
