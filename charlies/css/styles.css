@@ -24,16 +24,19 @@ body {
 header {
     background-image: url(../img/logo.png), 
     url(../img/cup.png);
-    background-size: 340px, 700px;
+    background-size: 340px, cover;
     background-position: center 10%, 7% 0%;
     background-repeat: no-repeat,
     no-repeat;
-    display: flex;
     color: white;
     height: 433px;
-    justify-content:space-between;
     padding: 28px 33px 28px 33px;
     width: 100%;
+}
+
+nav {
+    display:flex;
+    justify-content:space-between;
 }
 
 
@@ -93,16 +96,14 @@ p {
     justify-content: space-between
 }
 
-.about {
+.about p {
     max-width: 400px;
 }
 
 .socials {
     color: white;
     display:flex;
-    font-size: 150%;
-    padding: 1rem, 0;
-    margin-left: 20px;
+    font-size: 150%; 
     margin-right: 250px;
     margin-bottom: 1rem;
     max-width: 100px;
@@ -120,7 +121,7 @@ p {
 /* Tablet Breakpoint */
 @media screen and (min-width: 768px) {
     header {
-        background-size: 500px, 780px;
+        background-size: 500px, cover;
         background-position: 50% -35%, 7% -10%;
         height: 500px;
     }
@@ -147,7 +148,7 @@ p {
 /* Desktop Breakpoint */
 @media screen and (min-width: 1280px) {
     header {
-        background-size: 700px, 1600px;
+        background-size: 700px, cover;
         background-position: 80% 50%, 100% 65%;
         height: 500px;
     }
