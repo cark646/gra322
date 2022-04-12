@@ -1,87 +1,49 @@
-html {
-    --gray: #444;
-    --gray-dark: #333;
-    --gray-light: #f2f2f2;
-}
 
 body {
-    font-family: 'Libre Franklin', Arial, sans-serif;
-    font-weight: 300;
+    background-color: black;
+    font-family: 'Franklin Gothic Bold', 'Arial Narrow', Arial, sans-serif;
+    color: #FFFEF4;
 }
 
-h1 {
-    font-weight: 300;
-    font-size: 18px;
-    letter-spacing: 1px;
-}
-
-h2 {
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-
-}
-
-p {
-    letter-spacing: 1px;
-    line-height: 1.5;
-    margin-bottom: 1rem;
+.project {
+    background-color: #FFFEF4;
+    color: black;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: [full-start] minmax(1rem, 1fr) [main-start] minmax(0, 1280px) [main-end] minmax(1rem, 1fr) [full-end];
+    gap: 1rem;
+    margin: 2rem;
 }
 
-.grid > * {
-    grid-column: main;
+h1 {
+    writing-mode: vertical-rl;
 }
 
-header {
-    background-color: var(--gray-dark);
-    color: #fff;
-    padding: 1rem 0;
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.overview {
-    background-color: var(--gray);
-    color: #fff;
-    padding: 4rem 0;
+button {
+    color: #FFFEF4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25pt;
+    width: 226px;
 }
 
-figure {
-    margin-top: 2rem;
+.fall {
+    background-color: #7BCC00;
 }
 
-figure img {
-    margin-bottom: 1rem;
+.spring {
+    background-color: #C900F2;
 }
 
-figcaption {
-    font-size: 13px;
-    font-style: italic;
-    letter-spacing: 1px;
+.footer {
+    background-color: #FFFEF4;
+    color: black;
+    position: absolute;
+    bottom: 0;
 }
 
-.sample {
-    padding: 5rem 0;
-}
 
-footer {
-    background-color: var(--gray-light);
-    padding: 1.5rem 0;
-}
-
-footer p {
-    margin-bottom: 0;
-}
-
-@media screen and (min-width: 800px) {
-    .two-column {
-        display: grid;
-        grid-gap: 3rem;
-        grid-template-columns: 1fr 1fr;
-    }
-}
