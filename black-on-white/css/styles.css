@@ -1,0 +1,32 @@
+.webpage {
+    display: flex;
+    background: white;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .base {
+    display: flex;
+    background: white;
+    border: 0.5px solid black;
+    width: 71.428571vw;
+    height: 71.428571vh;
+    margin: auto;
+  }
+  
+  .outside {
+    display: flex;
+    background: white;
+    border: 0.5px solid black;
+    width: 42.857143vw;
+    height: 42.857143vh;
+    margin: auto;
+  }
+  
+  .inside {
+    background: black;
+    width: 14.285714vw;
+    height: 14.285714vh;
+    margin: auto;
+  }
+  
