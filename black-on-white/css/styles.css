@@ -8,7 +8,7 @@
   .base {
     display: flex;
     background: white;
-    border: 0.5px solid black;
+    border: 0.5px solid gray;
     width: 71.428571vw;
     height: 71.428571vh;
     margin: auto;
@@ -17,7 +17,7 @@
   .outside {
     display: flex;
     background: white;
-    border: 0.5px solid black;
+    border: 0.5px solid gray;
     width: 42.857143vw;
     height: 42.857143vh;
     margin: auto;
