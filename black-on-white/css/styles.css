@@ -17,7 +17,7 @@
   .outside {
     display: flex;
     background: white;
-    border: 0.5px solid gray;
+    border: 0.5px solid rgb(208, 208, 208);
     width: 42.857143vw;
     height: 42.857143vh;
     margin: auto;
